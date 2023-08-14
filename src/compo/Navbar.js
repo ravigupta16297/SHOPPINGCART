@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand" style={{ color: 'white' }}>Navbar</Link>
+          <Link to="/" className="navbar-brand" style={{ color: 'white' }}>Shopify</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
