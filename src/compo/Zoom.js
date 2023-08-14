@@ -10,7 +10,6 @@ const Zoom = () => {
     }, [])
     const handleClose=()=>{
         dispatch(zoomimg([]));
-        console.log(data)
     }
     
     return (
