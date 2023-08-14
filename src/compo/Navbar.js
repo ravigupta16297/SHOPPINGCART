@@ -7,7 +7,6 @@ const Navbar = () => {
   const val = useSelector((state) => state.addremove)
   const users = useSelector((state) => state.user)
 
-
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-dark">

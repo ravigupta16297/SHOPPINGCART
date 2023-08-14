@@ -6,8 +6,6 @@ import { useDispatch } from 'react-redux'
 const Logout = () => {
   const[toggle,setToggle]=useState(false);
     let dispatch=useDispatch();
-   
-    
    let nav=useNavigate();
     useEffect(()=>{
       setToggle(true);

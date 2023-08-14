@@ -26,7 +26,6 @@ const Cards = (props) => {
     dispatch(zoomimg({img:props.img,title:props.title,price:props.price,desc:props.desc}));
     setZoo(true);
   }
-
   return (
     <div className='col-md-3 my-3 mx-4'>
       {zoo && <Zoom img={img}  />}

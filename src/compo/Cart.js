@@ -13,9 +13,7 @@ const Cart = () => {
             nav('/')
         }
     }, []);
-
     let sum = 0;
-
     return (
         <>
         {val .length > 0 ? <div>   <ul className="list-group mt-2">
