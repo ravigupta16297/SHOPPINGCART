@@ -44,7 +44,7 @@ const Login = () => {
     return (
         <>
             <div className='contain'>
-                <h2>Login</h2>
+                <h2>Login...</h2>
                 <input type="text" name='uname' onChange={handleChange} placeholder='Enter User-Name*' />
                 {err && <p><strong>{err.name}</strong></p>}
                 <input type="password" name='pass' onChange={handleChange} placeholder='Enter Password*' /><br />
