@@ -14,7 +14,7 @@ const Login = () => {
         setItem({ ...item, [name]: value });
     }
     const handleClick = (e) => {
-        
+        e.preventDefault();
         if (item.uname !== '' || item.pass !== '') {
             let newdata = { id: new Date().getTime().toString(), item }
             setCred((prev) => [...prev, newdata]);
