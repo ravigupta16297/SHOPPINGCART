@@ -1,23 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {emptyuser,emptycart} from '../action'
+import { emptyuser, emptycart } from '../action'
 import { useDispatch } from 'react-redux'
 
+
 const Logout = () => {
-  const[toggle,setToggle]=useState(false);
-    let dispatch=useDispatch();
-   let nav=useNavigate();
-    useEffect(()=>{
-      setToggle(true);
-         dispatch(emptyuser([]));
-         dispatch(emptycart([]));
-         setToggle(false);
-          nav('/');
-    },[])
-    
+  const [toggle, setToggle] = useState(false);
+  let dispatch = useDispatch();
+  let nav = useNavigate();
+  useEffect(() => {
+    setToggle(true);
+    setTimeout(() => {
+      setToggle(false);
+      nav('/');
+    }, 2000)
+    dispatch(emptyuser([]));
+    dispatch(emptycart([]));
+  }, [])
+
   return (
     <>
-    {toggle && <p>Logging out...</p>}
+      {toggle && <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>}
     </>
   )
 }
